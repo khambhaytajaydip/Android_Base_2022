@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.jai" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryVariant">@color/test_color_light</item>
+        <item name="colorOnPrimary">@color/grey</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/grey</item>
+        <item name="colorSecondaryVariant">@color/grey</item>
+        <item name="colorOnSecondary">@color/grey</item>
+        <item name="colorAccent">@color/test_color</item>
+        <!-- Status bar color. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="backgroundColor">@color/white</item>
+        <item name="fontFamily">@font/test_font</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Dialog">
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher</item>
+        <item name="windowSplashScreenBackground">@color/ic_launcher_background</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/white</item>
+        <item name="postSplashScreenTheme">@style/Theme.jai</item>
+    </style>
+
+    <style name="PrimaryButtonStyle" parent="Base.Widget.AppCompat.Button">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="background">@color/test_color_light</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Blue Button -->
+    <style name="jai.button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="colorPrimary">@color/test_color</item>
+
+    </style>
+    <style name="jai.Button" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/test_color</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
